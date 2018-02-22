@@ -262,3 +262,4 @@ __pycache__/
 src/GenMyDoc.Web/package-lock.json
 
 package-lock.json
+dist/
