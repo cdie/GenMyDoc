@@ -3,7 +3,7 @@ import { ConstructorInfos } from './models/ctorInfos';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.template.html'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
 
