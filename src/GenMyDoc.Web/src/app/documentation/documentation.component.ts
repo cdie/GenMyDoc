@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DocumentationActions } from './store/documentation.actions';
 
 @Component({
   selector: 'app-documentation',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentationComponent implements OnInit {
 
-  constructor() { }
+  //#region Ctor
+
+  constructor(private _actions: DocumentationActions) { }
+
+  //#endregion
+
+  //#region OnInit
 
   ngOnInit() {
+    this._actions.loadDocumentationItems();
   }
+
+  //#endregion
 
 }

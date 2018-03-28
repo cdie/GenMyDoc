@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { DocumentationActions } from '../store/documentation.actions';
+import { DocumentationItem } from '../models/documentationItem';
+import { Observable } from 'rxjs';
+import { select } from '@angular-redux/store';
 
 @Component({
   selector: 'app-documentation-list',
@@ -7,9 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DocumentationListComponent implements OnInit {
 
-  constructor() { }
+  //#region Members
+
+  @select('filteredDocumentationItems')
+  filteredDocumentationItems$: Observable<DocumentationItem>;
+
+  //#endregion
+
+  //#region Ctor
+
+  constructor(private _actions: DocumentationActions) {
+  }
+
+  //#endregion
 
   ngOnInit() {
+    this._actions.filterDocumentationItems('');
   }
 
 }

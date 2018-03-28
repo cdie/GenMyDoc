@@ -1,3 +1,17 @@
-<p>
-  documentation-list works!
-</p>
+<div class="container">
+  <!-- <div class="row">
+    <form class="search-form">
+      <mat-form-field>
+        <input matInput type="search" placeholder="Search..." [formControl]="searchCtrl" [matAutocomplete]="auto">
+      </mat-form-field>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let docItem of autocompItems | async" [value]="docItem.name">
+          {{docItem.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </form>
+  </div> -->
+  <div class="row" *ngFor="let docItem of filteredDocumentationItems$ | async">
+    <a href="#">{{docItem.name}}</a>
+  </div>
+</div>
