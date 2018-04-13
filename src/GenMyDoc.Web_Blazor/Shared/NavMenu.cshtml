@@ -1,33 +1,50 @@
-﻿<div class='main-nav'>
-    <div class='navbar navbar-inverse'>
-        <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </button>
-            <a class='navbar-brand' href='/'>GenMyDoc.Web_Blazor</a>
-        </div>
-        <div class='clearfix'></div>
-        <div class='navbar-collapse collapse'>
-            <ul class='nav navbar-nav'>
-                <li>
-                    <NavLink href="/" Match=NavLinkMatch.All>
-                        <span class='glyphicon glyphicon-home'></span> Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink href="/counter">
-                        <span class='glyphicon glyphicon-education'></span> Counter
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink href="/fetchdata">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </NavLink>
-                </li>
-            </ul>
-        </div>
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">GenMyDoc</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <NavLink href="/documentation">
+                    <span class='glyphicon glyphicon-file'></span> Documentation
+                </NavLink>
+            </li>
+            <li class="nav-item">
+                <NavLink href="/admin">
+                    <span class='glyphicon glyphicon-education'></span> Administration
+                </NavLink>
+            </li>
+        </ul>
     </div>
-</div>
+</nav>
+@*<div class='main-nav'>
+        <div class='navbar navbar-inverse'>
+            <div class='navbar-header'>
+                <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                    <span class='sr-only'>Toggle navigation</span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a class='navbar-brand' href='/'>GenMyDoc.Web_Blazor</a>
+            </div>
+            <div class='clearfix'></div>
+            <div class='navbar-collapse collapse'>
+                <ul class='nav navbar-nav'>
+                    <li>
+                        <NavLink href="/" Match=NavLinkMatch.All>
+                            <span class='glyphicon glyphicon-home'></span> Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink href="/counter">
+                            <span class='glyphicon glyphicon-education'></span> Counter
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink href="/fetchdata">
+                            <span class='glyphicon glyphicon-th-list'></span> Fetch data
+                        </NavLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>*@

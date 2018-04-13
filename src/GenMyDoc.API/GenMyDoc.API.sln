@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60137A7C-585
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenMyDoc.Web_Blazor", "..\GenMyDoc.Web_Blazor\GenMyDoc.Web_Blazor.csproj", "{55EE0C1D-6ECB-482E-81BE-940D7E41032B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenMyDoc.Communication", "..\GenMyDoc.Communication\GenMyDoc.Communication.csproj", "{99A3AF8D-A69A-4150-B350-3FC1E899050E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{55EE0C1D-6ECB-482E-81BE-940D7E41032B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55EE0C1D-6ECB-482E-81BE-940D7E41032B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55EE0C1D-6ECB-482E-81BE-940D7E41032B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99A3AF8D-A69A-4150-B350-3FC1E899050E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A3AF8D-A69A-4150-B350-3FC1E899050E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A3AF8D-A69A-4150-B350-3FC1E899050E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A3AF8D-A69A-4150-B350-3FC1E899050E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{55EE0C1D-6ECB-482E-81BE-940D7E41032B} = {60137A7C-585E-4260-900F-0E228A92C3CF}
+		{99A3AF8D-A69A-4150-B350-3FC1E899050E} = {60137A7C-585E-4260-900F-0E228A92C3CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10F2141F-3B81-4D8C-A838-5C4D744608C8}
